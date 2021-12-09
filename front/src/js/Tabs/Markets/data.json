@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Lorem ipsum dolor sit amet.",
+        "address": "2715 Ash Dr. San Jose, South Dakota 83475",
+        "schedule": "Mercredi et Dimanche, de 9h à 12h30",
+        "tabs": ["market", "fair"],
+        "picture": "uploads/img/market1.png"
+    },
+    {
+        "name": "Lorem ipsum dolor sit amet.",
+        "address": "2715 Ash Dr. San Jose, South Dakota 83475",
+        "schedule": "Mercredi et Dimanche, de 9h à 12h30",
+        "tabs": ["fair"],
+        "picture": "uploads/img/market2.png"
+    },
+    {
+        "name": "Lorem ipsum dolor sit amet.",
+        "address": "2715 Ash Dr. San Jose, South Dakota 83475",
+        "schedule": "Mercredi et Dimanche, de 9h à 12h30",
+        "tabs": ["market"],
+        "picture": "uploads/img/market3.png"
+    },
+    {
+        "name": "Lorem ipsum dolor sit amet.",
+        "address": "2715 Ash Dr. San Jose, South Dakota 83475",
+        "schedule": "Mercredi et Dimanche, de 9h à 12h30",
+        "tabs": ["market"],
+        "picture": "uploads/img/market4.png"
+    },
+    {
+        "name": "Lorem ipsum dolor sit amet.",
+        "address": "2715 Ash Dr. San Jose, South Dakota 83475",
+        "schedule": "Mercredi et Dimanche, de 9h à 12h30",
+        "tabs": ["fair", "market"],
+        "picture": "uploads/img/market5.png"
+    }
+]

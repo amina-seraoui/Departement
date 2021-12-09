@@ -1,0 +1,20 @@
+.btn {
+    background-color: $primary-color;
+    padding: ratio-space(1px) ratio-space(4px);
+    border-radius: 5px;
+    color: $white;
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: $font-secondary;
+    letter-spacing: 1px;
+    transition: .2s;
+    
+    box-shadow: 2px 2px 5px rgba($black, .25);
+    &:hover {
+        box-shadow: 2px 2px 5px rgba($black, .5);
+    }
+
+    &:active {
+        box-shadow: inset 2px 2px 5px rgba($black, .25);
+    }
+}

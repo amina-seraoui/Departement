@@ -1,0 +1,34 @@
+button, input, textarea, a, input::placeholder {
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+a, button, input[type='submit'] {
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+}
+
+q:before {
+    content: '« ';
+}
+
+q:after {
+    content: ' »';
+}
+
+*, html, body {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: $font-primary;
+    font-size: $font-size;
+    color: $font-color;
+    font-weight: 500;
+}
+
+body {
+    overflow-x: hidden;
+}

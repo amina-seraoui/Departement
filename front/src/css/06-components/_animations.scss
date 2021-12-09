@@ -1,0 +1,8 @@
+.js-display, .react-display {
+    &:nth-child(odd) {
+        transform: translate(-100%)
+    }
+    &:nth-child(even) {
+        transform: translate(100%)
+    }
+}

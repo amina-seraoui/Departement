@@ -1,0 +1,43 @@
+h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: $font-secondary;
+    margin: ratio-space(4px) auto;
+    text-align: center;
+    font-weight: 600;
+    width: 90%;
+
+    @media #{$media-down-md} {
+        font-size: 25px;
+    }
+}
+
+h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: $font-secondary;
+    margin: ratio-space(4px) 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 25px;
+    font-family: $font-secondary;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+strong {
+    color: $primary-color;
+}
+
+nav ul li a {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+p {
+    padding: 4px 0;
+    line-height: 1.1em;
+}

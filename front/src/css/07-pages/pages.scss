@@ -1,0 +1,139 @@
+#home {
+    #lieux {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+
+        h2 {
+            width: 100%;
+        }
+        
+        article {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            a {
+                margin-bottom: ratio-space(4px);
+                overflow: hidden;
+
+                img {
+                    max-width: 450px;
+                    width: 100%;
+                    max-height: 270px;
+                    transition: .5s;
+
+                    
+                }
+
+                &:nth-child(odd) {
+                    img:hover {
+                        transform: rotate(-11deg) scale(1.5);
+                    }
+                }
+                &:nth-child(even) {
+                    img:hover {
+                        transform: rotate(11deg) scale(1.5);
+                    }
+                }
+            }
+        }
+    }
+
+    #map {
+
+        h2 {
+            @extend .container;
+            margin: 32px 0;
+        }
+
+        .content {
+            position: relative;
+            min-height: calc(425px + #{ratio-space(3px)});
+
+
+            .map {
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                width: 66%;
+                margin-bottom: ratio-space(3px);
+                z-index: 2;
+
+                iframe {
+                    width: 100%;
+                    height: 425px;
+                }
+            }
+            .text {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 60%;
+                height: 100%;
+                background-color: $secondary-color;
+                text-align: center;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+
+                p {
+                    color: $white;
+                    width: 57%;
+                    padding: 4px ratio-space(3px);
+                }
+            }
+        }
+        @media #{$media-down-md} {
+            width: 100%;
+
+            h2 {
+                margin: 32px auto;
+            }
+            
+            .content {
+                .map, .text {
+                    position: relative;
+                    width: 100%;
+                    margin: 0;
+                }
+
+                .text {
+                    padding: ratio-space(4px);
+
+                    p {
+                        width: 100%;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+
+    #climat {
+        .content {
+            display: flex;
+            align-items: center;
+            margin-bottom: ratio-space(4px);
+            .text {
+                margin-right: ratio-space(2px);
+            }
+            img {
+                width: 70%;
+            }
+
+            @media #{$media-down-md} {
+                flex-direction: column;
+
+                img {
+                    margin-top: ratio-space(4px);
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

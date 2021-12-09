@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Lorem ipsum dolor sit amet.",
+        "tabs": ["museum", "monument"],
+        "picture": "uploads/img/image1.png"
+    },
+    {
+        "name": "Lorem ipsum dolor sit amet.",
+        "tabs": ["museum"],
+        "picture": "uploads/img/image2.png"
+    },
+    {
+        "name": "Lorem ipsum dolor sit amet.",
+        "tabs": ["museum"],
+        "picture": "uploads/img/image3.png"
+    },
+    {
+        "name": "Lorem ipsum dolor sit amet.",
+        "tabs": ["museum"],
+        "picture": "uploads/img/image4.png"
+    },
+    {
+        "name": "Lorem ipsum dolor sit amet.",
+        "tabs": ["museum"],
+        "picture": "uploads/img/image5.png"
+    },
+    {
+        "name": "Lorem ipsum dolor sit amet.",
+        "tabs": ["monument"],
+        "picture": "uploads/img/image6.png"
+    },
+    {
+        "name": "Lorem ipsum dolor sit amet.",
+        "tabs": ["monument"],
+        "picture": "uploads/img/image7.png"
+    },
+    {
+        "name": "Lorem ipsum dolor sit amet.",
+        "tabs": ["monument"],
+        "picture": "uploads/img/image8.png"
+    },
+    {
+        "name": "Lorem ipsum dolor sit amet.",
+        "tabs": ["monument"],
+        "picture": "uploads/img/image9.png"
+    },
+    {
+        "name": "Lorem ipsum dolor sit amet.",
+        "tabs": ["monument"],
+        "picture": "uploads/img/image10.png"
+    }
+]
