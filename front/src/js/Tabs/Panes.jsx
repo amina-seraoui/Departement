@@ -6,7 +6,7 @@ const Panes = ({ children }) => {
     useEffect(() => {
         setFade(false)
         setTimeout(() => setFade(true), 100)
-    }, [children]);
+    }, [children])
 
     return <div className={'pane' + (fade ? ' visible' : '') }>
         { children }

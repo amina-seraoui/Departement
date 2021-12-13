@@ -1,15 +1,15 @@
 import gsap from 'gsap'
 
-let options = {
+const options = {
     root: null,
     rootMargin: '0px',
     threshold: 0.01
 }
 
-let callback = (entries, observer) => {
+const callback = (entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            let classNames = Array.from(entry.target.classList)
+            const classNames = Array.from(entry.target.classList)
             if (classNames.indexOf('animated') === -1) {
                 gsap.from(entry.target, {
                     opacity: 0,
@@ -25,9 +25,9 @@ let callback = (entries, observer) => {
     })
 }
 
-let observer = new IntersectionObserver(callback, options)
+// eslint-disable-next-line
+const observer = new IntersectionObserver(callback, options)
 
 Array.from(document.getElementsByClassName('js-display')).forEach(e => {
     observer.observe(e)
 })
-

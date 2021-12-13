@@ -7,16 +7,16 @@ const Places = ({ data }) => {
     const [activeTab, setActiveTab] = useState('all')
     const tabs = [
         {
-            'id': 'all',
-            'name': 'Tout'
+            id: 'all',
+            name: 'Tout'
         },
         {
-            'id': 'museum',
-            'name': 'Musées'
+            id: 'museum',
+            name: 'Musées'
         },
         {
-            'id': 'monument',
-            'name': 'Monuments'
+            id: 'monument',
+            name: 'Monuments'
         }
     ]
 
@@ -27,13 +27,12 @@ const Places = ({ data }) => {
                 data.map((item, id) => {
                     if (activeTab === 'all') {
                         return <Item item={item} key={id}/>
-                    }
-                    else if (item.tabs.indexOf(activeTab) !== -1) {
+                    } else if (item.tabs.indexOf(activeTab) !== -1) {
                         return <Item item={item} key={id}/>
                     }
                 })
             }
-         </Panes>
+        </Panes>
     </>
 }
 

@@ -1,12 +1,12 @@
-let btn = document.getElementById('open-menu')
-let close = document.getElementById('close-menu')
-let navbar = document.querySelector('header .navbar')
+const btn = document.getElementById('open-menu')
+const close = document.getElementById('close-menu')
+const navbar = document.querySelector('header .navbar')
 
 if (close && btn && navbar) {
     btn.addEventListener('click', e => {
         navbar.classList.toggle('opened')
     })
-    
+
     close.addEventListener('click', e => {
         navbar.classList.remove('opened')
     })
