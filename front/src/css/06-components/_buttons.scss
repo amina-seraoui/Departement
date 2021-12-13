@@ -1,20 +1,58 @@
+// .btn {
+//     background-color: $primary-color;
+//     padding: ratio-space(1px) ratio-space(4px);
+//     border-radius: 5px;
+//     color: $white;
+//     text-transform: uppercase;
+//     display: inline-block;
+//     font-family: $font-secondary;
+//     letter-spacing: 1px;
+//     transition: .2s;
+
+//     box-shadow: 2px 2px 5px rgba($black, .25);
+//     &:hover {
+    //         box-shadow: 2px 2px 5px rgba($black, .5);
+    //     }
+    
+    //     &:active {
+        //         box-shadow: inset 2px 2px 5px rgba($black, .25);
+        //     }
+        // }
+        
 .btn {
     background-color: $primary-color;
     padding: ratio-space(1px) ratio-space(4px);
-    border-radius: 5px;
     color: $white;
-    text-transform: uppercase;
-    display: inline-block;
+    transition: .2s;
     font-family: $font-secondary;
     letter-spacing: 1px;
-    transition: .2s;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
     
-    box-shadow: 2px 2px 5px rgba($black, .25);
-    &:hover {
-        box-shadow: 2px 2px 5px rgba($black, .5);
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        transition: .2s;
+        box-sizing: border-box;
+        opacity: 0;
+        border: solid 2px $white;
+        border-right: none;
+        border-left: none;
+        transform: scale(0.1, 1);
     }
 
-    &:active {
-        box-shadow: inset 2px 2px 5px rgba($black, .25);
+    &:hover {
+        letter-spacing: 2px;
+
+        &::before {
+            opacity: 1;
+            transform: scale(1, 1);
+        }
     }
 }

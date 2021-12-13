@@ -50,8 +50,7 @@
 
         .content {
             position: relative;
-            min-height: calc(425px + #{ratio-space(3px)});
-
+            height: 425px;
 
             .map {
                 position: absolute;
@@ -59,7 +58,6 @@
                 left: 0;
 
                 width: 66%;
-                margin-bottom: ratio-space(3px);
                 z-index: 2;
 
                 iframe {

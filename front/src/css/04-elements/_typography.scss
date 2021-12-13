@@ -1,3 +1,5 @@
+@include font-face(Droid-Sans, Regular, $weight: 500, $style: normal, $exts: woff ttf)
+
 h1 {
     font-size: 50px;
     text-transform: uppercase;

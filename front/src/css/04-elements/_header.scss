@@ -96,22 +96,22 @@ header {
         }
 
         .navbar {
-            display: none;
             position: fixed;
             top: 0;
-            width: 100%;
+            right: 0;
+            width: 90%;
             height: 100%;
+            transform: translate(100%);
+            transition: .5s;
 
             &.opened {
-                display: block;
+                transform: translate(0);
             }
             
             ul {
                 flex-direction: column;
 
                 li {
-                    margin: ratio-space(3px) ratio-space(1px);
-
                     &::before {
                         display: none;
                     }
@@ -140,8 +140,9 @@ header {
 
 #home header {
     .hero {
+        height: 85vh;
         min-height: 500px;
-        background: url('../img/background.png') left / cover no-repeat;
+        background: url('../img/background.jpg') left / cover no-repeat;
         position: relative;
         margin: 0;
 
